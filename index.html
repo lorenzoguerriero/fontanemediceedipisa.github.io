@@ -5,33 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mappa delle Fontane Storiche</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
-      font-family: sans-serif;
-    }
-    .mappa-wrapper {
-      position: relative;
-      width: 100%;
-      max-width: 725px;
-      margin: 2rem auto;
-      padding-top: 56.28%; /* rapporto 408 / 725 */
-      background-image: url('fontane.-allegato-mappa-delle-fontane-storiche-1.jpg');
-      background-size: cover;
-      background-position: top left;
-    }
-    .punto {
-      position: absolute;
-      width: 3%;
-      aspect-ratio: 1 / 1;
-      border-radius: 50%;
-      background-color: rgba(0, 123, 255, 0.6);
-      border: 1px solid #fff;
-      transform: translate(-50%, -50%);
-      cursor: pointer;
-    }
-  </style>
+  .mappa-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 725px;
+    margin: 2rem auto;
+    padding-top: 56.28%; /* rapporto 408 / 725 */
+    background-image: url('fontane.-allegato-mappa-delle-fontane-storiche-1.jpg');
+    background-size: contain; /* ✅ mostra tutta l'immagine */
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+  .punto {
+    position: absolute;
+    width: 3%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: rgba(0, 123, 255, 0.6);
+    border: 1px solid #fff;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+</style>
+
 </head>
 <body>
   <div class="mappa-wrapper">
