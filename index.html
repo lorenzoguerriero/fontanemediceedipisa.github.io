@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mappa delle Fontane Storiche di Pisa</title>
+  <title>Mappa delle Fontane Storiche</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: sans-serif;
       background-color: #f5f5f5;
+      font-family: sans-serif;
     }
-    .mappa-container {
+    .mappa-wrapper {
       position: relative;
+      width: 100%;
       max-width: 725px;
       margin: 2rem auto;
-    }
-    .mappa-container img {
-      width: 100%;
-      height: auto;
-      display: block;
+      padding-top: 56.28%; /* rapporto 408 / 725 */
+      background-image: url('fontane.-allegato-mappa-delle-fontane-storiche-1.jpg');
+      background-size: cover;
+      background-position: top left;
     }
     .punto {
       position: absolute;
@@ -34,14 +34,11 @@
   </style>
 </head>
 <body>
-  <div class="mappa-container" style="position: relative; width: 100%; max-width: 725px; margin: auto; padding-top: 56.28%;">
-  <img src="fontane.-allegato-mappa-delle-fontane-storiche-1.jpg" alt="Mappa delle fontane"
-       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
-
-  <a href="https://fontanemediceedipisa.wordpress.com/piazza-dei-cavalieri/" title="Piazza dei Cavalieri"
-     style="position: absolute; top:62.99%; left:68.55%; transform: translate(-50%, -50%);
-            width:3%; aspect-ratio:1/1; border-radius:50%; background-color:red;"></a>
-</div>
-
+  <div class="mappa-wrapper">
+    <!-- Esempio di punto -->
+    <a class="punto" href="https://fontanemediceedipisa.wordpress.com/piazza-dei-cavalieri/" title="Piazza dei Cavalieri" style="top:62.99%; left:68.55%;"></a>
+    <!-- Inserisci qui tutti gli altri punti -->
+  </div>
 </body>
 </html>
+
