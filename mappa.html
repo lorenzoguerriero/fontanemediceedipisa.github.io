@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mappa delle Fontane Storiche</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .map-container {
+      position: relative;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .map-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hotspot {
+      position: absolute;
+      width: 3%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background-color: rgba(0, 123, 255, 0.7);
+      border: 2px solid white;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .hotspot:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mappa delle Fontane Storiche di Pisa</h1>
+
+  <div class="map-container">
+    <img src="https://fontanemediceedipisa.wordpress.com/wp-content/uploads/2025/03/fontane.-allegato-mappa-delle-fontane-storiche-1.jpg" alt="Mappa delle fontane">
+
+    <!-- Esempio di hotspot -->
+    <a class="hotspot" href="https://fontanemediceedipisa.wordpress.com/piazza-dei-cavalieri/" style="top: 25.7%; left: 49.7%;"></a>
+    <a class="hotspot" href="https://fontanemediceedipisa.wordpress.com/fontana-di-piazza-san-francesco/" style="top: 27.6%; left: 65.3%;"></a>
+    <a class="hotspot" href="https://fontanemediceedipisa.wordpress.com/fontana-di-piazza-dancona/" style="top: 30.0%; left: 65.5%;"></a>
+    <!-- Aggiungi altri hotspot qui convertendo le coordinate pixel in percentuali -->
+  </div>
+
+</body>
+</html>
